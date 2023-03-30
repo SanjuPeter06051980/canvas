@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+    margin-top: 10px;
+	border-width:40px;
+	background-color: white; 
+	border-style:ridge;
+    margin-bottom: 20px;
+}
+
+h1
+{
+	
+	color:red!important;
+	
+}
+
+.body_backgorund 
+{
+    background-image:url(bg.png);
+    background-position:center;
+    background-size:cover;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Paint</title>
+</head>
+<body class="body_backgorund"> 
+<center>
+    <h1>Paint</h1>
+    <canvas id="myCanvas" width="500" height="300"> </canvas>
+        <div id="d1"></div>
+    
+    
+        <input  id="colour" placeholder="Enter the colour" class="btn btn-info">
+        <input id="width" placeholder="Enter the width of the line" class="btn btn-info">
+        <button id="clear" onclick="clrscr()" class="btn btn-success">Clear</button>
+    </center>
+    <script src="main.js">
+    </script>
+    </body>
+    </html>
